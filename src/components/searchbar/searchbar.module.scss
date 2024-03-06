@@ -1,0 +1,45 @@
+@import '../../scss/variables';
+
+.container{
+  display: flex;
+  flex-flow: row;
+  width: 22rem;
+  background-color: $color-white-900;
+  border-radius: 0.5rem;
+  filter: drop-shadow(0px 0.5rem 0.25rem rgb($color-black-900, 0.25));
+  &__input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 19rem;
+    padding: 0 0.25rem;
+  }
+  &__marker {
+    display: flex;
+    align-items: center;
+  }
+}
+.input {
+  height: 100%;
+  width: 14rem;
+  background-color: $color-white-900;
+  &:focus{
+    border: transparent;
+    outline: none;
+  }
+  &__button{
+    height: 100%;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+.divider {
+  width: 0.05rem;
+  height: 80%;
+  border-radius: 0.1rem;
+  background-color: $color-grey-700;
+}
