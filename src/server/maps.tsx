@@ -10,7 +10,7 @@ export async function fetchCoordinates (address:string) {
             params: {
                 address:address,
                 // @ts-ignore
-                key: process.env.GOOGLE_MAPS_API_KEY,
+                key: process.env.GOOGLE_API_KEY,
             },
             timeout: 2000, // milliseconds
         })
