@@ -1,7 +1,13 @@
-import styles from "./page.module.scss"
+// @ts-nocheck
+"use client";
 
-export default function Friends () {
-    return(<div>
+import styles from "./page.module.scss";
 
-    </div>)
+export default function Friends() {
+
+  return (
+    <div className={styles.container}>
+
+    </div>
+  );
 }

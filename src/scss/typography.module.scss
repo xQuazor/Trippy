@@ -11,6 +11,10 @@
     @extend .paragraph;
     color: $color-white-700;
   }
+  &__grey{
+    @extend .paragraph;
+    color: $color-grey-900
+  }
   &__small {
     font-size: 0.8rem;
     color: $color-grey-900;
@@ -18,20 +22,30 @@
       @extend .paragraph__small;
       color: $color-white-700;
     }
+    &__grey{
+      @extend .paragraph__small;
+      color: $color-grey-900;
+    }
+    &__green{
+      @extend .paragraph__small;
+      color: $color-green;
+    }
   }
 }
 
 .heading1{
   font-size: 3.5rem;
   color: $color-black-900;
+  font-weight: 800;
   &__white{
     @extend .heading1;
     color: $color-white-900;
   }
 }
 .heading2{
-  font-size: 2.25rem;
+  font-size: 3rem;
   color: $color-black-800;
+  font-weight: 700;
   &__white{
     @extend .heading2;
     color: $color-white-800;
@@ -39,7 +53,7 @@
 }
 .heading3{
   font-size: 1.5rem;
-  color: $color-black-700;
+  color: $color-black-800;
   font-weight: 600;
   &__white{
     @extend .heading3;
@@ -49,7 +63,7 @@
 
 .heading4{
   font-size: 1.25rem;
-  color: $color-black-700;
+  color: $color-black-800;
   font-weight: 600;
   &__white{
     @extend .heading4;

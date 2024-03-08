@@ -3,6 +3,7 @@
   width: calc(100vw - 4rem);
   position: relative;
   z-index: 1;
+  overflow: hidden;
   &__input{
     top:1.75rem;
     left: 2rem;

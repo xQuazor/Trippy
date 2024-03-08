@@ -11,29 +11,56 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
+    flex-flow: row;
     height: 100vh;
-    width: calc(100vw - 32rem);
-    background-color: $color-green;
+    width: calc(100vw - 28rem);
+    background-color: rgb($color-green,0.75);
   }
   &__right{
     display: flex;
+    flex-flow: column;
     justify-content: center;
     gap: 2rem;
     align-items: center;
     height: 100vh;
-    width: 32rem;
+    width: 28rem;
+  }
+  &__typewriter {
+    width: 16rem;
   }
 }
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 8rem;
-  height: 8rem;
-  background-color: $color-black-800;
+  width: 12rem;
+  height: 4rem;
+  background-color: transparent;
+  position: relative;
   &__container{
     width: 4rem;
     height: 4rem;
     position: relative;
   }
+  &__text{
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    filter: opacity(50% );
+  }
 }
+
+.button{
+  &__group{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+  }
+}
+
+.bottom__anchor{
+  position: absolute;
+  bottom: 0rem;
+}
+
