@@ -1,7 +1,7 @@
 "use client";
 
-import { fetchCoordinates } from "@/server/maps";
-import { getPois } from "@/server/get_pois";
+import { fetchCoordinates } from "@/server/fetching/maps";
+import { getPois } from "@/server/fetching/get_pois";
 
 import RecommendationList from "@/components/recommendationList/recommendationList";
 import SearchBar from "@/components/searchbar/searchbar";
@@ -27,11 +27,6 @@ const icon = new Icon({
   popupAnchor: [0.5, -32], // point from which the popup should open relative to the iconAnchor}
 });
 
-// const docRef = addDoc(collection(db, "cities"), {
-//     name: "Tokyo",
-//     country: "Japan"
-// });
-// console.log("Document written with ID: ", docRef);
 
 export default function Explore() {
   const [markers, setMarkers] = useState([]);

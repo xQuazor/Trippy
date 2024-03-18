@@ -4,35 +4,51 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column ;
+  flex-flow: column;
   height: 100vh;
   gap: 1rem;
-  &__logo{
+  &__logo {
     width: 10rem;
     height: 4rem;
     position: relative;
   }
-  &__login{
+  &__login {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
     gap: 1rem;
   }
-  &__recovery{
+  &__recovery {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row;
     gap: 0.5rem;
   }
-  &__details{
+  &__details {
     display: flex;
     flex-flow: column;
     justify-content: center;
     gap: 1rem;
     width: 20rem;
     height: 14rem;
+  }
+  &__error{
+    position: relative;
 
   }
+}
+
+.error_box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  bottom: -2rem;
+  left: 1rem;
+  height: 2rem;
+  padding: 0.25rem 0.5rem;
+  background-color: $color-white-700;
+  border-radius: 0.25rem;
 }

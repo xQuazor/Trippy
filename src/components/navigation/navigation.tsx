@@ -26,6 +26,7 @@ export default function Navigation() {
       <div className={styles.container__icons}>
         <button onClick={toggleSetOpen} className={styles.toggleButton}>
           <MenuIcon htmlColor={default_color} sx={{ fontSize: 28 }} />
+          {/*{open ? (<p>Menu</p>) : null}*/}
         </button>
         <Link href={"/friends"} className={`link ${pathname === '/friends' ? styles.link__active : styles.link}`} >
           <PeopleIcon htmlColor={default_color} sx={{ fontSize: 28 }} />

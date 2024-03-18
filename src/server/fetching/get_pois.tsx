@@ -3,7 +3,7 @@
 import fs from "node:fs/promises";
 import { clusterPOIS } from "./dbscan";
 import { addDoc, collection } from "@firebase/firestore";
-import { db } from "@/server/firebase";
+import { db } from "@/server/db/firebase";
 
 require("dotenv").config();
 
@@ -86,7 +86,6 @@ function getPhotos(latitude: number, longitude: number, radius: number) {
       const string = JSON.stringify(locations);
       fs.writeFile("./saves/location.json", string);
       console.log('File "Location" written successfully');
-
       clusterPOIS(locations, 0.0005, 2);
     })
     .catch(function (err) {

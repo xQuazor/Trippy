@@ -8,10 +8,10 @@ import {Button} from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 import Link from "next/link";
 
+
 export default function Auth() {
     return(
         <div className={styles.container}>
-
             <div className={styles.container__left}>
                 <motion.div
                     className={styles.logo}
@@ -45,7 +45,6 @@ export default function Auth() {
                        }}
                    />
                </div>
-
             </div>
             <div className={styles.container__right}>
                 <h1 className={typography.heading2}>
@@ -62,7 +61,6 @@ export default function Auth() {
                             Sign Up
                         </Button>
                     </Link>
-
                 </div>
                 <div className={styles.bottom__anchor}>
                     <div className={styles.logo__text}>
@@ -70,5 +68,5 @@ export default function Auth() {
                     </div>
                 </div>
             </div>
-        </div>)
+        </div>);
 }
