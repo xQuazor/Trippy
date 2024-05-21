@@ -1,0 +1,19 @@
+.container{
+  width: calc(100vw - 4rem);
+  padding: 2rem;
+  min-height: 100vh;
+  position: relative;
+  &__friend{
+
+  }
+}
+
+.input {
+  display: flex;
+  gap: 0.5rem;
+  flex-flow: column wrap;
+  width: 16rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}

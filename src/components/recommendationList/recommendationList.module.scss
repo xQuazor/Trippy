@@ -1,0 +1,30 @@
+@import "../../scss/variables.module";
+
+.container{
+  height: 20rem;
+  width: calc(100vw - 4rem);
+  padding: 1rem 2rem;
+  gap: 1rem;
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+  background-color: $color-white-700;
+  transition: 0.25s;
+  &__heading{
+    height: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1rem;
+    z-index: 3;
+  }
+  &__content{
+    height: 16rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 2rem;
+    overflow: scroll;
+    z-index: 2;
+  }
+}

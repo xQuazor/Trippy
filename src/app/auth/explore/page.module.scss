@@ -1,0 +1,42 @@
+.container {
+  height: 100vh;
+  width: calc(100vw - 4rem);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &__input__left{
+    top:1.75rem;
+    left: 2rem;
+    position: absolute;
+    z-index: 1000;
+  }
+  &__input__right{
+    top:1.75rem;
+    right: 2rem;
+    position: absolute;
+    z-index: 1000;
+  }
+  &__recommendation{
+    bottom:0rem;
+    left: 0rem;
+    position: absolute;
+    z-index: 1000;
+  }
+
+}
+
+
+.map{
+  height: 100vh;
+  width: calc(100vw - 4rem);
+  float: right;
+  position: relative;
+}
+.text_field {
+  background-color: green;
+  position: absolute;
+  float: right;
+  top: calc(100vh - 8rem);
+  bottom: 0;
+  z-index: 999;
+}

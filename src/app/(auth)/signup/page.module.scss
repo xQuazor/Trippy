@@ -1,0 +1,92 @@
+@import "../../../scss/variables.module";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 100vh;
+  gap: 1rem;
+  &__logo {
+    width: 10rem;
+    height: 4rem;
+    position: relative;
+  }
+  &__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 1rem;
+  }
+  &__recovery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    gap: 0.5rem;
+  }
+  &__details {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 20rem;
+    height: 18rem;
+  }
+  &__error{
+    position: relative;
+  }
+}
+
+.error {
+  &__box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 4;
+    right: 0;
+    bottom: 0;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      .error__message{
+        display: block;
+        position: absolute;
+        right: -6.5rem;
+        top: 1.5rem;
+        width: 13rem;
+        background-color: $color-white-900;
+        border: 0.1rem rgb($color-grey-900, 0.25) solid;
+        border-radius: 0.25rem;
+        padding: 0.25rem 0.5rem;
+        text-align: center;
+        opacity: 1;
+        transition: 0.25s;
+        z-index: 1000;
+      }
+    }
+  }
+  &__message {
+    display: none;
+    position: absolute;
+    right: -6.5rem;
+    top: 1.5rem;
+    width: 13rem;
+    background-color: $color-white-900;
+    border: 0.1rem rgb($color-grey-900, 0.25) solid;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: 0.25s;
+    z-index: 1000;
+  }
+  &__anchor {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+  }
+
+}

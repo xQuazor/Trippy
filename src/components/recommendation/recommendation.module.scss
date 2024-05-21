@@ -1,0 +1,76 @@
+@import "../../scss/variables.module";
+
+.container{
+  &__emojis{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-around;
+  }
+  &__recommendation {
+    aspect-ratio: 4/3;
+    height: 15rem;
+    width: 17rem;
+    position: relative;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    object-fit: cover;
+    &__heading{
+      position: relative;
+      z-index: 3;
+      height: 1.5rem;
+      overflow: clip;
+      text-overflow: ellipsis;
+      display: block;
+    }
+    &__subHeading{
+      position: relative;
+      z-index: 3;
+      margin-top: 0.5rem;
+    }
+    &__body{
+      position: relative;
+      z-index: 3;
+      margin-top: 1rem  ;
+    }
+  }
+}
+.image{
+  z-index: 0;
+  border-radius: 0.5rem;
+}
+
+.button{
+  position: relative;
+  z-index: 3;
+  display: flex;
+  gap: 0.5rem;
+}
+.emoji{
+  position: relative;
+  z-index: 3;
+  font-size: 1.75rem;
+  transition: 0.25s;
+  border: transparent;
+  background-color: rgb($color-white-500,0.25);
+  border-radius: 0.25rem;
+  &:hover{
+    border: transparent;
+    transition: 0.25s;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+.backdrop{
+  width: 100%;
+  height: 100%;
+  background-color: rgb($color-black-900, 0.5);
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 1;
+  border-radius: 0.5rem;
+}
